@@ -13,6 +13,6 @@ app.factory('configFactory', ['$http',(http) => {
     };
 
     return {
-        connectSocket
+        getConfig
     }
 }]);
