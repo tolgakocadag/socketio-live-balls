@@ -6,10 +6,12 @@ app.controller('indexController', ['$scope', 'indexFactory', 'configFactory', ($
     $scope.init = () => {
         const username = prompt('Please enter username');
 
-        if(username)
+        if(username && username.trim().length > 0){
+
             initSocket(username);
-        else 
-            return false;
+        } else{
+            window.location.reload();
+        } 
     }
 
     function scrollTop() {
