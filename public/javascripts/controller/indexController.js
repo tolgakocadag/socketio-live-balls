@@ -120,7 +120,7 @@ app.controller('indexController', ['$scope', 'indexFactory', ($scope, indexFacto
                 showBubble(socket.id,message);
                 scrollTop();
             };
-        }catch(e){
+        }catch(err){
             console.log(err);
         }
     }
