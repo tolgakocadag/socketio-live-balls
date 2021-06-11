@@ -1,4 +1,4 @@
-app.factory('configFactory', ['$http',(http) => {
+app.factory('configFactory', ['$http',($http) => {
     const getConfig = () => {
         return new Promise((resolve, reject) => {
             $http
